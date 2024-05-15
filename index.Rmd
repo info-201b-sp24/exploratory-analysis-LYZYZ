@@ -68,7 +68,9 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, warning = FALSE}
+source("chart1_example.R")
+plot(scatter_plot)
 ```
 
 ### Chart 2
@@ -77,8 +79,17 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+``````{r, echo = FALSE, warning = FALSE}
+source("chart2_example.R")
+plot()
+```
 ### Chart 3
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+
+``````{r, echo = FALSE, warning = FALSE}
+source("chart3_example.R")
+plot()
+```
