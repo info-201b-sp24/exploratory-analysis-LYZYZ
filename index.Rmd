@@ -3,6 +3,11 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(tidyr)
+```
 ## Project title
 
 Give your project a concise, interesting title that summarizes the entirety of your project
