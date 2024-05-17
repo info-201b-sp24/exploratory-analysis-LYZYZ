@@ -10,15 +10,18 @@ library(tidyr)
 ```
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Movie Kings
 
 ### Authors
 
 Names of your team members
+1.Yize Luo
+2.Lifei An
+3.Ruoqi Wang
 
 ### Date
 
-Winter 2022
+Spring 5/14/2024
 
 ### Abstract
 
@@ -26,44 +29,203 @@ No more than three sentences that summarize your project. Focus on the very most
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+key words: Netflix, Movie Analysis, Movie Ratings
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Introduction
+This project focuses on analyzing various aspects of movies, including their ratings, genres, box office performance, and the influence of directors and writers. By examining a dataset that includes movies from different years, we aim to uncover patterns and insights that can provide a deeper understanding of the film industry.
+
+The motivation behind this project stems from the significant impact that movies have on culture and society. Movies are not only a source of entertainment but also a reflection of societal values and issues. Understanding the dynamics of movie success and the factors that contribute to it can offer valuable insights for filmmakers, producers, and marketers.
+
+Research Questions:
+
+1) What genres tend to perform best at the box office?
+
+Understanding which genres are most successful can help filmmakers and studios make informed decisions about the types of movies to produce. This is important for maximizing revenue and catering to audience preferences.
+
+2) How do movie ratings correlate with box office performance?
+
+Investigating the relationship between movie ratings (e.g., G, PG, R) and their financial success can reveal insights into audience demographics and preferences. This information is crucial for marketing strategies and content creation.
+
+3) What is the impact of directors and writers on a movie's success?
+
+Analyzing the role of directors and writers in the success of movies can highlight the importance of creative leadership. This is important for recognizing and nurturing talent within the industry.
+
+4) How has the popularity of different genres changed over time?
+
+Examining trends in genre popularity over different years can provide insights into changing audience tastes and cultural shifts. This is valuable for predicting future trends and adapting to evolving market demands.
+
+
+
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The study of movies, their genres, box office performance, and the influence of creative contributors has been an area of interest for both academic researchers and industry professionals. Understanding these factors can provide insights into the success and cultural impact of films.
+
+One relevant study is "The Economics of the Movie Industry" by Charles B. Weinberg, which explores various factors influencing box office performance, including marketing, release timing, and competition. This work underscores the complexity of predicting movie success and highlights the importance of genre and ratings in attracting audiences .
+
+Another significant contribution is the research paper "Predicting Movie Success and Academy Awards Through Sentiment and Social Network Analysis" by Sitaram Asur and Bernardo A. Huberman. This study utilizes sentiment analysis and social network metrics to forecast a film's commercial success and its potential to win awards. It demonstrates how data analytics can be applied to understand audience reactions and predict outcomes .
+
+In the realm of popular press, an article by The Hollywood Reporter titled "Why Some Films Flop and Others Succeed" delves into the various reasons behind a movie's box office performance. The article discusses factors such as star power, marketing strategies, and critical reviews, providing a comprehensive view of the industry's dynamics .
+
+Additionally, the book "The Hollywood Economist" by Edward Jay Epstein offers an in-depth look at the financial workings of Hollywood, including the economics of film production and distribution. Epstein's work highlights the importance of understanding the business side of the film industry to grasp why certain films succeed while others fail .
+
+These related works provide a foundation for our study by highlighting key factors that influence movie success. They offer a blend of economic analysis, data-driven insights, and industry perspectives, all of which are essential for a comprehensive understanding of the film industry. By building on these studies, our project aims to further explore the intricate dynamics that drive the success and popularity of movies.
 
 ### The Dataset
 
 Where did you find the data? Please include a link to the data source  
+
+https://www.kaggle.com/datasets/danielgrijalvas/movies?resource=download
+
 Who collected the data?  
+
+The dataset was collected and compiled by a user named Stefano Leone on Kaggle. It aggregates data from various sources, primarily the Internet Movie Database (IMDb), which is a widely recognized and comprehensive database of movie information.
+
 How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
+
+The data was collected by scraping information from IMDb, including movie titles, genres, ratings, release dates, directors, writers, stars, budget, gross revenue, runtime, and production companies. This scraping process involves using automated scripts to extract information from IMDb's website, ensuring a comprehensive compilation of movie-related data.
+
+Why was the data collected? 
+
+The dataset was collected to provide a rich resource for data analysis and machine learning projects related to the film industry. It allows researchers, data scientists, and enthusiasts to explore various aspects of movies, understand trends, and build predictive models. The dataset's extensive information makes it suitable for a wide range of analytical purposes, from academic research to industry applications.
+
+How many observations (rows) are in your data? 
+
+The dataset contains 85,855 observations (rows), each representing a different movie.
+
 How many features (columns) are in the data?  
+
+There are 22 features (columns) in the dataset.
+
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
 
+While the data is publicly available, it is important to ensure that the usage complies with IMDb's terms of service and respects the privacy of individuals involved in the movie industry.
+Representation and Bias: The dataset might reflect biases present in the movie industry, such as underrepresentation of certain groups. Analyzing this data responsibly involves acknowledging and addressing these biases.
+Accuracy and Authenticity: Scraped data might contain inaccuracies or inconsistencies. Ensuring data quality and verifying information is crucial to maintain the integrity of the analysis.
+
+What are possible limitations or problems with this data?
+
+Some movies might have missing information, such as budget or gross revenue, which can affect the comprehensiveness of the analysis.
+Data Quality: Since the data is scraped from IMDb, there may be inaccuracies or inconsistencies due to changes on the IMDb website or errors in the scraping process.
+Temporal Relevance: The dataset might not include the most recent movies or updates, potentially limiting its applicability to current trends.
+Biases: The dataset may reflect industry biases, such as the dominance of Hollywood movies, which could affect the generalizability of the findings to other film markets.
+By considering these factors, we can conduct a more responsible and insightful analysis of the film industry.
+
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Answering the research questions provided can have significant implications for technologists, designers, and policymakers in the film industry.
+
+Implications for Technologists:
+Data-Driven Decision Making: Technologists can leverage the findings to develop advanced data analytics tools that help predict box office success based on genre, ratings, and creative talent. These tools can aid filmmakers and studios in making more informed production choices.
+Algorithm Optimization: Streaming platforms and recommendation engines can be fine-tuned to feature genres, ratings, and films with higher predicted success rates, leading to improved user satisfaction and increased viewership.
+Audience Segmentation: Insights into audience preferences based on movie ratings and genre popularity over time can enable technologists to create more personalized and effective marketing strategies via machine learning models.
+Implications for Designers:
+Targeted Marketing Campaigns: Knowing which genres and ratings perform best allows designers to craft more targeted and engaging promotional materials, including posters, trailers, and advertisements, to attract the right audience segments.
+Content Design: Understanding the critical factors that lead to high movie ratings can inform the design of storylines, visuals, and overall production quality. Designers can focus on elements that are proven to resonate well with both critics and audiences.
+Brand Development: Successful directors and writers can be featured prominently in marketing materials and brand campaigns, leveraging their influence to build a movie’s brand and enhance its appeal.
+Implications for Policymakers:
+Resource Allocation: Policymakers can use these insights to better allocate grants and funding to support genres, ratings, and creative talents that are likely to be successful, thus fostering a more sustainable movie industry.
+Cultural Promotion: By understanding trends in genre popularity and audience preferences, policymakers can promote cultural content that aligns with both historical successes and evolving tastes, ensuring a diverse and representative film industry.
+Regulatory Decisions: Insights into the impact of movie ratings on box office performance can inform regulatory decisions regarding content ratings and the protection of specific audience demographics, ensuring balanced content regulation.
+Overall, these findings can drive a more strategic and data-informed approach to film production, marketing, and policy-making, ultimately enhancing the efficiency and effectiveness of the film industry in meeting audience demands and achieving financial success.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+Addressing the research questions on box office performance by genre, movie ratings, the impact of directors and writers, the evolution of genre popularity, and factors contributing to high movie ratings, presents several challenges and limitations:
 
+Data Limitations:
+Data Availability and Quality: Access to comprehensive, accurate, and up-to-date box office data and metadata on movies (e.g., genre, ratings, directors, writers) can be a significant challenge. Inconsistent or incomplete data can lead to biased or inaccurate conclusions.
+Classification Issues: Movies often fit into multiple genres, making classification challenging. The subjective nature of genre classification could lead to inconsistencies in the analysis.
+Temporal and Contextual Factors:
+Changing Trends: Audience preferences and cultural trends evolve over time. Historical data may not fully capture these shifts, limiting the predictive power of the analysis for future trends.
+Impact of External Events: Events like economic downturns, pandemics, or major sociopolitical changes can drastically affect movie-going behavior and box office performance, making it difficult to isolate the impact of genre or creative talent.
+Analytical Challenges:
+Causality vs. Correlation: Distinguishing between correlation and causation is challenging. A genre’s success may be associated with external factors such as marketing budget, release timing, star power, or social media influence, rather than the genre itself.
+Demographic Variations: Demographic factors such as age, gender, and geographic location can significantly influence movie preferences and box office success. Ensuring that these factors are adequately accounted for requires detailed demographic data.
+Implementation Challenges:
+Actionable Insights: Translating complex data insights into practical strategies for filmmakers, technologists, designers, and policymakers can be challenging. The findings must be presented in an accessible and actionable manner to inform decision-making effectively.
+Ethical Considerations: Analyzing and acting on audience data involves ethical considerations around privacy and data use. Ensuring ethical practices in data collection and analysis is paramount.
+Navigating these challenges requires robust data collection methods, advanced analytics, and a nuanced understanding of the film industry's multifaceted nature. Collaborative efforts and interdisciplinary approaches can help mitigate these limitations and provide more accurate and actionable insights.
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+The summary statistics for the movie dataset reveal several key findings. The average release year of the movies is 2000, with a standard deviation of 11.15 years, indicating a fairly wide range of release dates spanning from 1980 to 2020. The average movie score is 6.39 out of 10, with scores ranging from 1.9 to 9.3. The typical movie has received about 88,108 votes, though this number varies greatly, with some movies receiving as few as 7 votes and others up to 2.4 million. Budget data shows a mean of approximately $35.59 million, with significant variability, ranging from $3,000 to $356 million. Finally, the average gross revenue is $78.5 million, also with substantial variation, from a low of $309 to a high of $2.85 billion. The average runtime is about 107 minutes, with movies ranging from 55 to 366 minutes.
 
 ### Table
 
-Include a table of aggregate information
+```{r}
+summary_stats <- movies %>% 
+  summarise(
+    mean_year = mean(year, na.rm = TRUE),
+    std_year = sd(year, na.rm = TRUE),
+    min_year = min(year, na.rm = TRUE),
+    p25_year = quantile(year, 0.25, na.rm = TRUE),
+    median_year = median(year, na.rm = TRUE),
+    p75_year = quantile(year, 0.75, na.rm = TRUE),
+    max_year = max(year, na.rm = TRUE),
+    
+    mean_score = mean(score, na.rm = TRUE),
+    std_score = sd(score, na.rm = TRUE),
+    min_score = min(score, na.rm = TRUE),
+    p25_score = quantile(score, 0.25, na.rm = TRUE),
+    median_score = median(score, na.rm = TRUE),
+    p75_score = quantile(score, 0.75, na.rm = TRUE),
+    max_score = max(score, na.rm = TRUE),
+    
+    mean_votes = mean(votes, na.rm = TRUE),
+    std_votes = sd(votes, na.rm = TRUE),
+    min_votes = min(votes, na.rm = TRUE),
+    p25_votes = quantile(votes, 0.25, na.rm = TRUE),
+    median_votes = median(votes, na.rm = TRUE),
+    p75_votes = quantile(votes, 0.75, na.rm = TRUE),
+    max_votes = max(votes, na.rm = TRUE),
+    
+    mean_budget = mean(budget, na.rm = TRUE),
+    std_budget = sd(budget, na.rm = TRUE),
+    min_budget = min(budget, na.rm = TRUE),
+    p25_budget = quantile(budget, 0.25, na.rm = TRUE),
+    median_budget = median(budget, na.rm = TRUE),
+    p75_budget = quantile(budget, 0.75, na.rm = TRUE),
+    max_budget = max(budget, na.rm = TRUE),
+    
+    mean_gross = mean(gross, na.rm = TRUE),
+    std_gross = sd(gross, na.rm = TRUE),
+    min_gross = min(gross, na.rm = TRUE),
+    p25_gross = quantile(gross, 0.25, na.rm = TRUE),
+    median_gross = median(gross, na.rm = TRUE),
+    p75_gross = quantile(gross, 0.75, na.rm = TRUE),
+    max_gross = max(gross, na.rm = TRUE),
+    
+    mean_runtime = mean(runtime, na.rm = TRUE),
+    std_runtime = sd(runtime, na.rm = TRUE),
+    min_runtime = min(runtime, na.rm = TRUE),
+    p25_runtime = quantile(runtime, 0.25, na.rm = TRUE),
+    median_runtime = median(runtime, na.rm = TRUE),
+    p75_runtime = quantile(runtime, 0.75, na.rm = TRUE),
+    max_runtime = max(runtime, na.rm = TRUE)
+  )
 
-Describe why you included the table and what information it reveals
+summary_table <- as.data.frame(t(summary_stats))
+
+
+print(summary_table)
+```
+
+Description and Insights
+This table provides a detailed summary of the aggregate information for the key numeric attributes of the movie dataset. It includes the mean, standard deviation, minimum, 25th percentile, median (50th percentile), 75th percentile, and maximum values for year, score, votes, budget, gross, and runtime.
+
+Purpose: The inclusion of this table aims to offer a clear and concise overview of the distribution and central tendencies within the dataset, which is useful for identifying patterns, outliers, and the overall spread of the data.
+
+Revealed Information:
+
+Year: Movies span from 1980 to 2020, with an average release year around 2000, indicating a broad historical range.
+Score: Movie ratings vary widely (1.9 to 9.3), with an average score of 6.39, suggesting most movies are rated above average.
+Votes: The number of votes a movie receives ranges significantly, highlighting the variability in popularity and audience engagement.
+Budget: The budget data shows a wide range, with significant differences between low-budget and high-budget films, emphasizing the diversity in production scales.
+Gross: Gross revenue also varies greatly, from very low to exceptionally high, reflecting the financial success spectrum of movies.
+Runtime: The runtime distribution shows that most movies are around 104 minutes long, with some outliers extending much longer.
+This comprehensive view helps in understanding the characteristics and trends in the movie industry over the given time period.
 
 ### Chart 1
 
@@ -86,7 +248,7 @@ Describe why you chose this chart and what information it reveals
 
 ``````{r, echo = FALSE, warning = FALSE}
 source("chart2_example.R")
-plot()
+plot(genre_gross_plot)
 ```
 ### Chart 3
 
@@ -96,5 +258,5 @@ Describe why you chose this chart and what information it reveals
 
 ``````{r, echo = FALSE, warning = FALSE}
 source("chart3_example.R")
-plot()
+plot(ratings_vs_gross)
 ```
